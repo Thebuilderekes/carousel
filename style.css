@@ -46,7 +46,9 @@ the edges of the slides, but adequately spaced
 
 .carousel .carousel-item-visible {
     display: block;
+     animation: fadeVisibility 0.5s
 }
+
 
 .carousel .carousel-item img {
     width: 100%;
@@ -82,6 +84,16 @@ the edges of the slides, but adequately spaced
     margin-right: 20px;   
 }
 
+
+
+@keyframes fadeVisibility {
+0% {
+  opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
 /*
     Styling the Carousel
 
